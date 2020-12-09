@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/production.css">
+   <title>01 Home page</title>
+</head>
+<body>
+   <div class="header-bg"></div>
+   <div class="wrapper">
+      <div class="container">
+
+
+
+
+
+<!-- Header -->
+         <header class="header">
+
+<!-- Navbar -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+            <div class="hamburger">
+               <label for="nav-trigger"><i class="fas fa-bars"></i></label>
+            </div>
+            <ul class="navbar-list">
+               <li class="nav-item"><a class="link-custom" href="01_Home_page.html">Home1</a></li>
+               <li class="nav-item"><a class="link-custom" href="02_Home_page.html">Home2</a></li>
+               <li class="nav-item"><a class="link-custom" href="03_Detail_page.html">Detail</a></li>
+               <li class="nav-item"><a class="link-custom" href="04_About_me.html">About</a></li>
+               <li class="nav-item"><a class="link-custom" href="05_Contact_us.html">Contact</a></li>
+            </ul>
+
+<!-- Logo -->
+            <div class="header__logo">
+               <img src="img/icons/logo.png" alt="logo">
+               <p class="header__p">BLOG</p>
+            </div>
+
+<!-- Social etc. Icons -->
+            <div class="header__icons">
+               <div class="header__icons_wifi">
+                  <a href="#"><i class="fas fa-rss"></i></a>
+               </div>
+               <div class="header__icons_twitter">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+               <div class="header__icons_tumblr">
+                  <a href="#"><i class="fab fa-tumblr"></i></a>
+               </div>
+               <div class="header__icons_facebook">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+               </div>
+               <div class="header__icons_search">
+                  <a href="#"><i class="fas fa-search"></i></a>
+               </div>
+            </div>
+         </header>
+
+
+
+
+
+<!-- Main -->
+         <main class="main">
+
+<!-- Slider -->
+            <div class="main__slider">
+               <div class="main__slider-left-div">
+                  <p class="main__slider-left-div_p">Latest News</p>
+                  <h1 class="main__slider-left-div_h1">BodyBuilding best for you health</h1>
+               </div>
+
+               <div class="main__slider-right-div">
+                  <div class="main__slider-right-div_squares">
+                     <div class="main__slider-small-square"></div>
+                     <div class="main__slider-small-square  main__slider-small-squares_center"></div>
+                     <div class="main__slider-small-square"></div>
+                  </div>
+
+                  <div class="main__slider-navbar">
+                     <button class="main__slider-navbar_left-arrow"></button>
+                     <p class="main__slider-navbar_p">Featured Article</p>
+                     <button class="main__slider-navbar_right-arrow"></button>
+                  </div>
+               </div>
+            </div>
+
+<!-- Newsletter -->
+            <div class="main__newsletter">
+               <p class="main__newsletter_p">Signup to
+                  Newsletter</p>
+               <form action="action_page.php" name="main-newsletter-form" class="main__newsletter_form" method="POST">
+                  <input type="text" class="main__newsletter_input-field" placeholder="YOUR NAME" minlength="2">
+                  <input type="email" class="main__newsletter_input-field" placeholder="YOUR EMAIL ADDRESS" minlength="7">
+                  <input type="submit" class="main__newsletter_input-btn" value="SUBSCRIBE NOW">
+               </form>
+            </div>
+
+<!-- Posts 4 flex columns-->
+            <div class="main__posts">
+
+<!-- 1st column -->
+               <div class="main__posts_column  main__posts_1st-column">
+
+<!-- Post card #1 -->
+                  <div class="post-card">
+                     <div class="post-card__main ">
+                        <div class="post-card__icon-div">
+                           <img src="./img/icons/pencil.png" alt="pencil icon">
+                        </div>
+                        <p class="post-card__category">Travelling</p>
+                        <h2 class="post-card__h2">Travel  Best Adventure</h2>
+                        <p class="post-card__publication-date">January 25, 2016</p>
+                        <p class="post-card__annotation">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</p>
+                        <button class="post-card__btn">Read More</button>
+                     </div>
+                     <div class="post-card__footer">
+                        <div class="post-card__footer_comments">
+                           <img src="img/icons/comment.png" alt="comment icon" class="post-card__footer_comments-icon">
+                           <p class="post-card__footer_comments-p">No Comment</p>
+                        </div>
+                        <div class="post-card__footer_social">
+                           <a href="#"><img src="./img/icons/earth.png" alt="earth icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/facebook.png" alt="facebook icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/twitter.png" alt="twitter icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/pinterest.png" alt="pinterest icon" class="post-card__footer_social-icon"></a>
+                        </div>
+                     </div>
+                  </div>
+
+<!-- Post card #2 -->
+                  <div class="post-card  post-card_empty-blank"></div>
+
+<!-- Post card #3 -->
+                  <div class="post-card  post-card_custom-bg">
+                     <div class="post-card__main post-card__main_custom-bg">
+                        <p class="post-card__category">Travelling</p>
+                        <h2 class="post-card__h2">Travel  Best Adventure</h2>
+                        <p class="post-card__publication-date">January 25, 2016</p>
+                        <p class="post-card__annotation">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo
+                           tehampor incididunt uts laboasre etsa
+                           iusmod tehampor incididunt uts havlaboasre et dolhvaliqua. Ut enim  vem,
+                              choice is the have great work.</p>
+                        <button class="post-card__btn">Read More</button>
+                     </div>
+                  </div>
+               </div>
+
+<!-- 2nd Column -->
+               <div class="main__posts_column main__posts_2nd-column">
+
+<!-- Post card #1 -->
+                  <div class="post-card post-card_custom-margin">
+                     <div>
+                        <img src="./img/postCardImage.png" alt="some image" class="post-card__main_header-img">
+                     </div>
+                     <div class="post-card__main post-card__main_image-post">
+                        <div class="post-card__icon-div post-card__icon-div-center">
+                           <img src="./img/icons/image.png" alt="image logo">
+                        </div>
+                        <p class="post-card__category">Travelling</p>
+                        <h2 class="post-card__h2">Standard Image Post </h2>
+                        <p class="post-card__publication-date post-card__publication-date_image-post">January 25, 2016</p>
+                        <button class="post-card__btn">Read More</button>
+                     </div>
+                     <div class="post-card__footer">
+                        <div class="post-card__footer_comments">
+                           <img src="img/icons/comment.png" alt="comment icon" class="post-card__footer_comments-icon">
+                           <p class="post-card__footer_comments-p">06 Comment</p>
+                        </div>
+                        <div class="post-card__footer_social">
+                           <a href="#"><img src="./img/icons/earth.png" alt="earth icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/facebook.png" alt="facebook icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/twitter.png" alt="twitter icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/pinterest.png" alt="pinterest icon" class="post-card__footer_social-icon"></a>
+                        </div>
+                     </div>
+                  </div>
+
+<!-- Post card #2 -->
+                  <div class="post-card  post-card_custom-margin">
+                     <div class="post-card__main post-card__main_quotes">
+                        <div class="post-card__icon-div post-card__icon-div_white-bg">
+                           <img src="./img/icons/quotes.png" alt="some icon">
+                        </div>
+                        <p class="post-card__annotation post-card__annotation_white">As per Lorm ipsum dolor sitamet, 
+                           consectetur adipisicing elits, sed do Now eiusmod tempor havei ut labores et dolore magna aliqusa. Ut wenim ad minim veniam, quis 
+                           its a snostrud now is the ullamco 
+                             aliquip ex ea commodo .</p>
+                        <p class="post-card__category">Nathalia Alexy</p>
+                     </div>
+                  </div>
+
+<!-- Post card #3 -->
+                  <div class="post-card">
+                     <div class="post-card__main_header">
+                        <img src="./img/postCardImage.png" alt="some image" class="post-card__main_header-img">
+                        <img src="./img/icons/player.png" alt="player" class="post-card__main_header-img-player">
+                     </div>
+                     <div class="post-card__main post-card__main_video-post">
+                        <div class="post-card__icon-div">
+                           <img src="./img/icons/filmStrip.png" alt="image logo">
+                        </div>
+                        <p class="post-card__category">Designer</p>
+                        <h2 class="post-card__h2">Video Image Post Style</h2>
+                        <p class="post-card__publication-date">January 25, 2016</p>
+                        <p class="post-card__annotation">A CONAN staffer is learning the rules of the in  road, with a little help from Look out, fellow drivers!</p>
+                     </div>
+                     <div class="post-card__footer">
+                        <div class="post-card__footer_comments">
+                           <img src="img/icons/comment.png" alt="comment icon" class="post-card__footer_comments-icon">
+                           <p class="post-card__footer_comments-p">No Comment</p>
+                        </div>
+                        <div class="post-card__footer_social">
+                           <a href="#"><img src="./img/icons/earth.png" alt="earth icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/facebook.png" alt="facebook icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/twitter.png" alt="twitter icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/pinterest.png" alt="pinterest icon" class="post-card__footer_social-icon"></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+<!-- 3rd column -->
+               <div class="main__posts_column main__posts_3rd-column">
+
+<!-- Post card #1 -->
+                  <div class="post-card">
+                     <div class="post-card__main">
+                        <div class="post-card__icon-div">
+                           <img src="./img/icons/pencil.png" alt="">
+                        </div>
+                        <p class="post-card__category">Fashion</p>
+                        <h2 class="post-card__h2">Simple post style</h2>
+                        <p class="post-card__publication-date">January 02, 2016</p>
+                        <p class="post-card__annotation">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have great work.</p>
+                        <button class="post-card__btn">Read More</button>
+                     </div>
+                     <div class="post-card__footer">
+                        <div class="post-card__footer_comments">
+                           <img src="img/icons/comment.png" alt="comment icon" class="post-card__footer_comments-icon">
+                           <p class="post-card__footer_comments-p">No Comment</p>
+                        </div>
+                        <div class="post-card__footer_social">
+                           <a href="#"><img src="./img/icons/earth.png" alt="earth icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/facebook.png" alt="facebook icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/twitter.png" alt="twitter icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/pinterest.png" alt="pinterest icon" class="post-card__footer_social-icon"></a>
+                        </div>
+                     </div>
+                  </div>
+
+<!-- Post card #2 -->
+                  <div class="post-card post-card_custom-margin">
+                     <div>
+                        <img src="./img/postCardImageWhite.png" alt="some image" class="post-card__main_header-img">
+                     </div>
+                     <div class="post-card__main post-card__main_image-post">
+                        <div class="post-card__icon-div post-card__icon-div-center">
+                           <img src="./img/icons/image.png" alt="image logo">
+                        </div>
+                        <p class="post-card__category">Adventures</p>
+                        <h2 class="post-card__h2">awesome Gallery Post</h2>
+                        <p class="post-card__publication-date post-card__publication-date_image-post">January 25, 2016</p>
+                        <button class="post-card__btn post-card__btn_custom">Read More</button>
+                     </div>
+                     <div class="post-card__footer">
+                        <div class="post-card__footer_comments">
+                           <img src="img/icons/comment.png" alt="comment icon" class="post-card__footer_comments-icon">
+                           <p class="post-card__footer_comments-p">02 Comment</p>
+                        </div>
+                        <div class="post-card__footer_social">
+                           <a href="#"><img src="./img/icons/earth.png" alt="earth icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/facebook.png" alt="facebook icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/twitter.png" alt="twitter icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/pinterest.png" alt="pinterest icon" class="post-card__footer_social-icon"></a>
+                        </div>
+                     </div>
+                  </div>
+
+<!-- Post card #3 -->
+                  <div class="post-card post-card_custom-margin">
+                     <div class="post-card__main post-card__main_external-link">
+                        <div class="post-card__icon-div post-card__icon-div_white-bg">
+                           <img src="./img/icons/url.png" alt="some icon">
+                        </div>
+                        <a href="http://www.abcdomainname.com/screen/discovery" class="post-card__external-link">http://www.abcdomainname.com/ screen/discovery</a>
+                     </div>
+                  </div>
+
+<!-- Post card #4 -->
+                  <div class="post-card post-card_custom-margin">
+                     <div class="post-card__main post-card__main_four-squares">
+                        <div class="post-card__icon-div post-card__icon-div_white-bg">
+                           <img src="./img/icons/fourSquares.png" alt="some icon">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="main__posts_column main__posts_4th-column">
+
+<!-- Post card #1 -->
+                  <div class="post-card post-card_empty-blank post-card_big-margin"></div>
+
+<!-- Post card #2 -->
+                  <div class="post-card  post-card_big-margin">
+                     <div class="post-card__main">
+                        <div class="post-card__icon-div">
+                           <img src="./img/icons/pencil.png" alt="">
+                        </div>
+                        <p class="post-card__category">Lifestyle</p>
+                        <h2 class="post-card__h2">without image post </h2>
+                        <p class="post-card__publication-date">January 07, 2016</p>
+                        <p class="post-card__annotation">Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.</p>
+                        <button class="post-card__btn">Read More</button>
+                     </div>
+                     <div class="post-card__footer">
+                        <div class="post-card__footer_comments">
+                           <img src="img/icons/comment.png" alt="comment icon" class="post-card__footer_comments-icon">
+                           <p class="post-card__footer_comments-p">No Comment</p>
+                        </div>
+                        <div class="post-card__footer_social">
+                           <a href="#"><img src="./img/icons/earth.png" alt="earth icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/facebook.png" alt="facebook icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/twitter.png" alt="twitter icon" class="post-card__footer_social-icon"></a>
+                           <a href="#"><img src="./img/icons/pinterest.png" alt="pinterest icon" class="post-card__footer_social-icon"></a>
+                        </div>
+                     </div>
+                  </div>
+
+<!-- Post card #3 -->
+                  <div class="post-card">
+                     <div class="post-card__main">
+                        <div class="post-card__icon-div">
+                           <img src="./img/icons/music.png" alt="music icon">
+                        </div>
+                        <p class="post-card__category">Audio Music </p>
+                        <h2 class="post-card__h2">Best Audio Player Post</h2>
+                        <p class="post-card__publication-date">December 29, 2015</p>
+                        <div class="grey-circle"></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </main>
+   </div>
+
+
+
+
+
+<!-- Footer 4 flex columns-->
+         <footer class="footer footer_19px">
+            <div class="footer__content-wrapper">
+
+                  <div class="footer__left-column">
+      <!-- 1st column -->
+                     <div class="footer__1st-column">
+                        <h1 class="footer__h1">About Blog</h1>
+                        <p class="footer__1st-column_p">Lorem ipsum dolor sit amet, conser adipisicing  esse cillum dolore nulla pariatur. </p>
+                        <div class="footer__1st-column_some-div">
+                           <p class="footer__1st-column_nathaliya-jhone">Nathaliya Jhone</p>
+                        </div>
+                     </div>
+         
+         <!-- 2nd column -->
+                     <div class="footer__2nd-column">
+                        <h1 class="footer__h1">latest tweets</h1>
+                        <p class="footer__2nd-column_twitter-p"><i class="fab fa-twitter footer__2nd-column_twitter-icon"></i>@Twitter@magicalrebekah</p>
+                        <p class="footer__2nd-column_p">Developer Advocate @heyval isaiyou knows the very well is about things .
+                        </p>
+                        <p class="footer__2nd-column_twitter-p"><i class="fab fa-twitter footer__2nd-column_twitter-icon"></i>@Twitter@magicalrebekah</p>
+                        <p class="footer__2nd-column_p">Developer Advocate hav a great work this knows the very well is about things .
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="footer__right-column">
+      <!-- 3rd column -->
+                     <div class="footer__3rd-column">
+                        <h1 class="footer__h1">Follow me instagram</h1>
+                        <div class="footer__instagram-gallery">
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                        </div>
+                     </div>
+         
+         <!-- 4th column -->
+                     <div class="footer__4th-column">
+                        <h1 class="footer__h1">latest comment</h1>
+                        <p class="footer__4th-column_p">From Alex :
+                        </p>
+                        <p class="footer__4th-column_p">Developer Advocate @heyval isaiyou know the very well is talking about things .</p>
+                        <div class="horizontal-divider"></div>
+                        <p class="footer__4th-column_p">From Jhon Doe :
+                        </p>
+                        <p class="footer__4th-column_p">Developer Advocate @heyval isaiyou know the very well is talking about things .</p>
+                     </div>
+                  </div>
+            </div>
+
+   <!-- copyrights -->
+            <div class="copyrights">
+               <p class="copyrights__p">@2015 copyright .all right reserved by awesome theme</p>
+               <div class="copyrights__div">
+                  <div class="vertical-divider"></div>
+                  <a href="#" class="copyrights__a">terms policy</a>
+                  <div class="vertical-divider"></div>
+                  <a href="#" class="copyrights__a">disclaimer</a>
+               </div>
+            </div>
+         </footer>
+   </div>
+</body>
+</html>
