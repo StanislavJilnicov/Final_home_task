@@ -1,0 +1,220 @@
+.wrapper-404 {
+   @extend %center;
+   height: 100vh;
+   color: map-get($colors, MineShaft);
+   background-color: map-get($colors, AthensGray);
+}
+
+
+.main-404 {
+   text-align: center;
+
+   &__404 {
+      position: relative;
+   }
+
+   &__h1 {
+      font-family: Montserrat;
+      font-size: 300px;
+      font-weight: bold;
+      line-height: 0.08;
+      letter-spacing: 3.6px;
+      text-align: center;
+      transform: scaleX(0.89);
+      margin-bottom: 155px;
+
+      @include media (651px) {font-size: 250px;}
+
+      @include media (541px) {font-size: 200px;}
+
+      @include media (461px) {
+         font-size: 150px;
+         margin-bottom: 100px;
+      }
+   }
+
+   &__paragraph-div {
+      position: absolute;
+      top: 170%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 563px;
+      height: 29px;
+      background-color: map-get($colors, white);
+
+      @include media (651px) {
+         width: 500px;
+         height: 24px;
+      }
+
+      @include media (541px) {
+         width: 450px;
+         height: 20px;
+      }
+
+      @include media(461px) {
+         display: none;
+      }
+   }
+
+   &__paragraph {
+      font-family: Hind;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: 14.24px;
+      text-align: center;
+      color: map-get($colors, third);
+      text-transform: uppercase;
+      margin-top: 8px;
+
+      @include media(651px) {
+         font-size: 16px;
+         margin-top: 4px;
+      }
+
+      @include media(541px) {
+         font-size: 12px;
+         margin-top: 5px;
+      }
+   }
+}
+
+
+.search-form-404 {
+   margin-bottom: 34px;
+   width: 100vw;
+   max-width: 775px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   @include media (801px) {
+      width: 98vw;
+      max-width: unset;
+   }
+
+   @include media (461px) {
+      margin: 0 auto 100px auto;
+      display: block;
+   }
+
+   &__input {
+      width: 100%;
+      max-width: 605px;
+      height: 100%;
+      padding: 0 0 0 24px;
+      border: solid 1px map-get($colors, seven);
+      background-color: map-get($colors, white);
+      
+
+      @include media (801px) {
+         width: 65vw;
+         max-width: unset;
+      }
+
+      @include media (541px) {
+         width: 50vw;
+      }
+
+      @include media (461px) {
+         display: block;
+         width: 100%;
+      }
+
+      &:focus {
+         font-size: 18px;
+         outline-color: map-get($colors, cyan);
+      }
+   
+      &::placeholder {
+         font-family: Hind;
+         font-size: 14px;
+         letter-spacing: 0.17px;
+         color: map-get($colors, MineShaft);
+      }
+   }
+
+   &__button {
+      border: solid 1px map-get($colors, seven);
+      background-color: map-get($colors, MineShaft);
+      font-family: Montserrat;
+      padding: 0 53px;
+      height: 100%;
+      margin-left: -5px;
+      font-size: 14px;
+      font-weight: bold;
+      letter-spacing: 0.18px;
+      color: map-get($colors, white);
+      text-transform: uppercase;
+
+      @extend %transition;
+
+      @include media(461px) {
+         margin-left: 0;
+         display: block;
+         width: 100%;
+         margin-top: 20px;
+      }
+
+      &:hover {
+         cursor: pointer;
+         color: map-get($colors, cyan);
+      }
+
+      &:active {
+         transform: scale(0.95);
+      }
+   }
+}
+
+
+.description-block-404 {
+   &__h2 {
+      font-family: Montserrat;
+      font-size: 30px;
+      letter-spacing: 0.36px;
+      font-weight: bold;
+      margin-bottom: 3px;
+
+      @include media(461px) {
+         padding: 10px;
+      }
+   }
+
+   &__p {
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.71;
+      color: map-get($colors, DustyGray);
+      margin-bottom: 20px;
+
+      @include media (541px) {
+         font-size: 12px;
+      }
+   }
+
+   &__home-icon {
+      font-size: 15px;
+      margin-right: 8px;
+   }
+
+   &__link {
+      font-family: Montserrat;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.17px;
+      text-decoration: none;
+      color: map-get($colors, MineShaft);
+      font-weight: bold;
+      
+      @extend %transition;
+      
+      &:hover {
+      color: map-get($colors, cyan);
+      }
+   }
+}

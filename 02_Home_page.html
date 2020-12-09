@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/production.css">
+   <title>02 Home page</title>
+</head>
+<body>
+   <div class="header-bg"></div>
+   <div class="wrapper">
+      <div class="container">
+
+
+
+
+
+<!-- Header -->
+         <header class="header">
+
+<!-- Navbar -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+            <div class="hamburger">
+               <label for="nav-trigger"><i class="fas fa-bars"></i></label>
+            </div>
+            <ul class="navbar-list">
+               <li class="nav-item"><a class="link-custom" href="01_Home_page.html">Home1</a></li>
+               <li class="nav-item"><a class="link-custom" href="02_Home_page.html">Home2</a></li>
+               <li class="nav-item"><a class="link-custom" href="03_Detail_page.html">Detail</a></li>
+               <li class="nav-item"><a class="link-custom" href="04_About_me.html">About</a></li>
+               <li class="nav-item"><a class="link-custom" href="05_Contact_us.html">Contact</a></li>
+            </ul>
+
+<!-- Logo -->
+            <div class="header__logo">
+               <img src="img/icons/logo.png" alt="logo">
+               <p class="header__p">BLOG</p>
+            </div>
+
+<!-- Social etc. Icons -->
+            <div class="header__icons">
+               <div class="header__icons_wifi">
+                  <a href="#"><i class="fas fa-rss"></i></a>
+               </div>
+               <div class="header__icons_twitter">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+               <div class="header__icons_tumblr">
+                  <a href="#"><i class="fab fa-tumblr"></i></a>
+               </div>
+               <div class="header__icons_facebook">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+               </div>
+               <div class="header__icons_search">
+                  <a href="#"><i class="fas fa-search"></i></a>
+               </div>
+            </div>
+         </header>
+
+
+
+
+
+<!-- Main -->
+         <main class="main">
+<!-- Slider -->
+            <div class="main__slider">
+               <div class="main__slider-left-div">
+                  <p class="main__slider-left-div_p">Latest News</p>
+                  <h1 class="main__slider-left-div_h1">BodyBuilding best for you health</h1>
+               </div>
+
+               <div class="main__slider-right-div">
+                  <div class="main__slider-right-div_squares">
+                     <div class="main__slider-small-square"></div>
+                     <div class="main__slider-small-square  main__slider-small-squares_center"></div>
+                     <div class="main__slider-small-square"></div>
+                  </div>
+
+                  <div class="main__slider-navbar">
+                     <button class="main__slider-navbar_left-arrow"></button>
+                     <p class="main__slider-navbar_p">Featured Article</p>
+                     <button class="main__slider-navbar_right-arrow"></button>
+                  </div>
+               </div>
+            </div>
+
+<!-- Newsletter -->
+            <div class="main__newsletter">
+               <p class="main__newsletter_p">Signup to
+                  Newsletter</p>
+               <form action="action_page.php" name="main-newsletter-form" class="main__newsletter_form" method="POST">
+                  <input type="text" class="main__newsletter_input-field" placeholder="YOUR NAME" minlength="2">
+                  <input type="email" class="main__newsletter_input-field" placeholder="YOUR EMAIL ADDRESS" minlength="7">
+                  <input type="submit" class="main__newsletter_input-btn" value="SUBSCRIBE NOW">
+               </form>
+            </div>
+
+<!-- Posts 2 flex columns-->
+
+            <div class="main__blog">
+
+<!-- Left column -->
+
+               <div class="main__blog_left-column">
+
+<!-- 1st post -->
+                  <div class="image-post">
+                     <div class="horizontal-divider-wide"></div>
+                     <div class="image-post__image-div">
+                        <img src="./img/imagePostBg.png" alt="white background" class="image-post__image-div_img">
+                        <div class="image-post__icon-div">
+                           <img src="./img/icons/image.png" alt="pencil icon">
+                        </div>
+                        <div class="image-post__icon-div_pinterest">
+                           <img src="./img/icons/pinterestWhite.png" alt="pinterest icon">
+                        </div>
+                     </div>
+
+                     <div class="image-post__intro-content">
+                        <div class="image-post__intro-content_main">
+                           <p class="image-post__category">Travelling</p>
+                           <h2 class="image-post__h2">be the one to stand out in the crowed</h2>
+                           <div class="image-post__author-date-container">
+                              <i class="fas fa-user image-post__author-icon"></i>
+                              <p class="image-post__author">Dike AcAlister</p>
+                              <i class="fas fa-calendar-alt image-post__publication-date-icon"></i>
+                              <p class="image-post__publication-date">January 16,2016</p>
+                           </div>
+                           <p class="image-post__annotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcos laboris nisis ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore egiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id it laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore  ut labore et dolore now is the great working with travlling magnam aliquam quaerat voluptatem.</p>
+                           <button class="post-card__btn">Read More</button>
+                        </div>
+
+                        <footer class="image-post__intro-content_footer">
+
+                           <div class="image-post__footer_left-div">
+                              <img src="img/icons/comment.png" alt="comment icon" class="image-post__footer_comments-icon">
+                              <p class="image-post__footer_comments-p">06 Comment</p>
+                              <img src="img/icons/like.png" alt="like icon" class="image-post__footer_like-icon">
+                              <p class="image-post__footer_like-p">Like 25</p>
+                           </div>
+
+                           <div class="image-post__footer_right-div">
+                              <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon" class="image-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon" class="image-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon" class="image-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon" class="image-post__footer_social-icon"></a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+
+<!-- 2nd post -->
+                  <div class="gallery-post">
+                     <div class="horizontal-divider-wide"></div>
+                     <div class="gallery-post__image-div">
+                        <div class="gallery-post__image-div_1st-column">
+                           <img src="./img/mediumRectangle.png" alt="rectangle" class="gallery-post__image-div_img">
+                           <img src="./img/mediumRectangle.png" alt="rectangle" class="gallery-post__image-div_img">
+                        </div>
+                        <div class="gallery-post__image-div_2nd-column">
+                           <img src="./img/bigVerticalRectangle.png" alt="rectangle">
+                        </div>
+                        <div class="gallery-post__image-div_3rd-column">
+                           <img src="./img/mediumRectangle.png" alt="rectangle" class="gallery-post__image-div_img">
+                           <img src="./img/mediumRectangle.png" alt="rectangle" class="gallery-post__image-div_img">
+                        </div>
+                        <div class="gallery-post__icon-div">
+                           <img src="./img/icons/image.png" alt="pencil icon">
+                        </div>
+                     </div>
+
+                     <div class="gallery-post__intro-content">
+                        <div class="gallery-post__intro-content_main">
+                           <p class="gallery-post__category">fashion & adventure</p>
+                           <h2 class="gallery-post__h2">fashion and adventure in world</h2>
+                           <div class="gallery-post__author-date-container">
+                              <i class="fas fa-user gallery-post__author-icon"></i>
+                              <p class="gallery-post__author">Jhone Albert</p>
+                              <i class="fas fa-calendar-alt gallery-post__publication-date-icon"></i>
+                              <p class="gallery-post__publication-date">January 16,2016</p>
+                           </div>
+                           <p class="gallery-post__annotation">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamcos laboris nisis ut aliquip ex ea commodo consequat.   ut labore et dolore now is the great working with travlling magnam aliquam quaerat voluptatem.</p>
+                           <button class="post-card__btn">Read More</button>
+                        </div>
+
+                        <footer class="gallery-post__intro-content_footer">
+
+                           <div class="gallery-post__footer_left-div">
+                              <img src="img/icons/comment.png" alt="comment icon" class="gallery-post__footer_comments-icon">
+                              <p class="gallery-post__footer_comments-p">no Comment</p>
+                              <img src="img/icons/like.png" alt="like icon" class="gallery-post__footer_like-icon">
+                              <p class="gallery-post__footer_like-p">Like 25</p>
+                           </div>
+
+                           <div class="gallery-post__footer_right-div">
+                              <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon" class="gallery-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon" class="gallery-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon" class="gallery-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon" class="gallery-post__footer_social-icon"></a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+
+<!-- 3rd post -->
+                  <div class="quotes-post">
+                     <div class="quotes-post__icon-div">
+                        <img src="./img/icons/quotes.png" alt="some icon">
+                     </div>
+                     <p class="quotes-post__p">It's about having an actives lifestyles, staying of’shealthy powers, and making the right decisions. Life is bes about balance. Not everybody wants to run a marathon, but we extra have a now days flight of stairs.</p>
+                     <p class="quotes-post__author">Apolo Ohno</p>
+                  </div>
+
+<!-- 4th post -->
+                  <div class="video-post">
+                     <div class="horizontal-divider-wide"></div>
+                     <div class="video-post__image-div">
+                        <img src="./img/playerBg.png" alt="player background" class="video-post__image-div_img">
+                        <div class="video-post__icon-div">
+                           <img src="./img/icons/image.png" alt="pencil icon">
+                        </div>
+                     </div>
+
+                     <div class="video-post__intro-content">
+                        <div class="video-post__intro-content_main">
+                           <p class="video-post__category">Travelling</p>
+                           <h2 class="video-post__h2">Ben Sturgulewski Cinematography Reel :: Sturgefilm 
+                              Adventure & travelling 2016</h2>
+                           <div class="video-post__author-date-container">
+                              <i class="fas fa-user video-post__author-icon"></i>
+                              <p class="video-post__author">Dike AcAlister</p>
+                              <i class="fas fa-calendar-alt video-post__publication-date-icon"></i>
+                              <p class="video-post__publication-date">January 16,2016</p>
+                           </div>
+                           <p class="video-post__annotation">ent in search of the untamed, the estranged, the wild few tending the flame. I found myself in a world bigger agrander i athas is a all imagination, color and life vibrating in everything. Just what sort of wonder could this new world hold?'
+                              All shots by Ben Sturgulewski, from features, commercials, and personal projects. Filmed on location in Alaska, Argentina, Bolivia, British Columbia, Dubai, Japan, Oregon, the Maldives, and Washington State.</p>
+                        </div>
+
+                        <footer class="video-post__intro-content_footer">
+
+                           <div class="video-post__footer_left-div">
+                              <img src="img/icons/comment.png" alt="comment icon" class="video-post__footer_comments-icon">
+                              <p class="video-post__footer_comments-p">06 Comment</p>
+                              <img src="img/icons/like.png" alt="like icon" class="video-post__footer_like-icon">
+                              <p class="video-post__footer_like-p">Like 25</p>
+                           </div>
+
+                           <div class="video-post__footer_right-div">
+                              <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon" class="video-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon" class="video-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon" class="video-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon" class="video-post__footer_social-icon"></a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+
+<!-- 5th post -->
+                  <div class="soundcloud-post">
+                     <img src="./img/soundcloud.png" alt="soundcloud" class="soundcloud-post_img">
+                  </div>
+
+<!-- 6x post -->
+                  <div class="text-post">
+                     <div class="horizontal-divider-wide"></div>
+                     <div class="text-post__icon-div_text">
+                        <img src="./img/icons/pencil.png" alt="pencil icon">
+                     </div>
+
+                     <div class="text-post__intro-content">
+                        <div class="text-post__intro-content_main">
+                           <p class="text-post__category">Lifestyle</p>
+                           <h2 class="text-post__h2">my journey towards a minimalist lifestyle</h2>
+                           <div class="text-post__author-date-container">
+                              <i class="fas fa-user text-post__author-icon"></i>
+                              <p class="text-post__author">Kendrick Lamar</p>
+                              <i class="fas fa-calendar-alt text-post__publication-date-icon"></i>
+                              <p class="text-post__publication-date">January 28,2016</p>
+                           </div>
+                           <p class="text-post__annotation">Now before I go further, I wants to clarify a huge misconceptions about the minimalists lifestyle. First of all, it doesn’t mean you own practically nothing and must live in a tiny house. Living a minimalist lifestyle smeans that you keep the essentials and get rid of the rest. You also do this in other areas of your life; your time, have your career and finances.  excess and making room for the things you truly enjoy.</p>
+                           <p class="text-post__annotation">Today, I continue to simplify our home and gets rids of things that we don’t need. Although we live in a smaller home, the space appears bigger because we own nows less stuff. My goal is no longer to please others by making my home a make have a somthing speacial it a space that my family can enjoy.</p>
+                           <button class="post-card__btn">Read More</button>
+                        </div>
+
+                        <footer class="text-post__intro-content_footer">
+
+                           <div class="text-post__footer_left-div">
+                              <img src="img/icons/comment.png" alt="comment icon" class="text-post__footer_comments-icon">
+                              <p class="text-post__footer_comments-p">06 Comment</p>
+                              <img src="img/icons/like.png" alt="like icon" class="text-post__footer_like-icon">
+                              <p class="text-post__footer_like-p">Like 25</p>
+                           </div>
+
+                           <div class="text-post__footer_right-div">
+                              <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon" class="text-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon" class="text-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon" class="text-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon" class="text-post__footer_social-icon"></a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+
+<!-- 7th post -->
+                  <div class="quotes-post_custom">
+                     <div class="quotes-post__icon-div">
+                        <img src="./img/icons/quotes.png" alt="some icon">
+                     </div>
+                     <p class="quotes-post__p_custom">
+                        freebranders.com
+                     </p>
+                     <a class="quotes-post__a">
+                        https://dribbble.com/hots/2442963-Blog-Ui-Kit-1170px-grid-ready/attachments/475369
+                     </a>
+                  </div>
+               </div>
+
+<!-- Right column -->
+               <aside class="main__blog_right-column">
+                  <div class="small-container">
+   
+<!-- Search Form -->
+                     <form action="action_page.php" name="search-form" id="search-form" class="search-form">
+                        <input type="search" placeholder="search" minlength="5" class="search-form__input">
+                        <button type="submit" form="search-form" class="search-form__btn"><i class="fas fa-search"></i></button>
+                     </form>
+
+<!-- Aside Img -->
+                     <img src="./img/asideRightLargeImg1.png" alt="a man with tie" class="aside-large-banner">
+
+<!-- Aside Navbar -->
+                     <div class="aside-navbar">
+                        <h2 class="aside-navbar__h2">Catagories</h2>
+                        <ul>
+                           <li class="aside-navbar__li">
+                              <a href="#">lifestyle</a>
+                              <p>98</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Audio</a>
+                              <p>102</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Gallery</a>
+                              <p>83</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Image</a>
+                              <p>04</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Standard</a>
+                              <p>109</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Status</a>
+                              <p>50</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Video</a>
+                              <p>102</p>
+                           </li>
+                        </ul>
+                     </div>
+
+<!-- Aside Img -->
+                     <img src="./img/asideRightSmallImg.png" alt="a man" class="aside-small-banner">
+
+<!-- Aside Posts -->
+                     <div class="aside-posts">
+                        <h2 class="aside-posts__h2">Latest Post</h2>
+
+<!-- 1st post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallGreyRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2">
+                                 <a href="#">jurney towards a lifestyle</a>
+                              </h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 16 2015</p>
+                                 <p class="aside-posts__post_p">Like 255</p>
+                              </div>
+                           </div>
+                        </div>
+
+<!-- 2nd post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallBlackRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2"><a href="#">Fashionable shoes for men</a></h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 18 2015</p>
+                                 <p class="aside-posts__post_p">Like 26</p>
+                              </div>
+                           </div>
+                        </div>
+
+<!-- 3rd post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallGreyRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2"><a href="#">really awesome’s Adventure</a></h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 23 2015</p>
+                                 <p class="aside-posts__post_p">Like 23</p>
+                              </div>
+                           </div>
+                        </div>
+
+<!-- 4th post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallBlackRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2"><a href="#">Man Hunting in jungle</a></h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 16 2015</p>
+                                 <p class="aside-posts__post_p">Like 29</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+<!-- Aside Social Icons -->
+                     <div class="aside-social-icons">
+                        <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon"></a>
+                        <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon"></a>
+                        <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon"></a>
+                        <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon"></a>
+                        <a href="#"><img src="./img/icons/linkedInBig.png" alt="linkedIn icon"></a>
+                     </div>
+
+<!-- Aside Slider -->
+                     <div class="aside-slider">
+                        <img src="./img/asideSliderBg.png" alt="slider iamge">
+                        <button class="aside-slider__left-arrow"></button>
+                        <button class="aside-slider__right-arrow"></button>
+                     </div>
+                     
+                     <div class="aside-facebook-snippet">
+                        <img src="./img/asideRightFacebook.png" alt="facebook">
+                     </div>
+                  </div>
+               </aside>
+            </div>
+         </main>
+   </div>
+
+
+
+
+
+<!-- Footer 4 flex columns-->
+         <footer class="footer footer_63px">
+            <div class="footer__content-wrapper">
+
+                  <div class="footer__left-column">
+         <!-- 1st column -->
+                     <div class="footer__1st-column">
+                        <h1 class="footer__h1">About Blog</h1>
+                        <p class="footer__1st-column_p">Lorem ipsum dolor sit amet, conser adipisicing  esse cillum dolore nulla pariatur. </p>
+                        <div class="footer__1st-column_some-div">
+                           <p class="footer__1st-column_nathaliya-jhone">Nathaliya Jhone</p>
+                        </div>
+                     </div>
+
+         <!-- 2nd column -->
+                     <div class="footer__2nd-column">
+                        <h1 class="footer__h1">latest tweets</h1>
+                        <p class="footer__2nd-column_twitter-p"><i class="fab fa-twitter footer__2nd-column_twitter-icon"></i>@Twitter@magicalrebekah</p>
+                        <p class="footer__2nd-column_p">Developer Advocate @heyval isaiyou knows the very well is about things .
+                        </p>
+                        <p class="footer__2nd-column_twitter-p"><i class="fab fa-twitter footer__2nd-column_twitter-icon"></i>@Twitter@magicalrebekah</p>
+                        <p class="footer__2nd-column_p">Developer Advocate hav a great work this knows the very well is about things .
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="footer__right-column">
+         <!-- 3rd column -->
+                     <div class="footer__3rd-column">
+                        <h1 class="footer__h1">Follow me instagram</h1>
+                        <div class="footer__instagram-gallery">
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                        </div>
+                     </div>
+
+         <!-- 4th column -->
+                     <div class="footer__4th-column">
+                        <h1 class="footer__h1">latest comment</h1>
+                        <p class="footer__4th-column_p">From Alex :
+                        </p>
+                        <p class="footer__4th-column_p">Developer Advocate @heyval isaiyou know the very well is talking about things .</p>
+                        <div class="horizontal-divider"></div>
+                        <p class="footer__4th-column_p">From Jhon Doe :
+                        </p>
+                        <p class="footer__4th-column_p">Developer Advocate @heyval isaiyou know the very well is talking about things .</p>
+                     </div>
+                  </div>
+            </div>
+
+         <!-- copyrights -->
+            <div class="copyrights">
+               <p class="copyrights__p">@2015 copyright .all right reserved by awesome theme</p>
+               <div class="copyrights__div">
+                  <div class="vertical-divider"></div>
+                  <a href="#" class="copyrights__a">terms policy</a>
+                  <div class="vertical-divider"></div>
+                  <a href="#" class="copyrights__a">disclaimer</a>
+               </div>
+            </div>
+         </footer>
+   </div>
+</body>
+</html>

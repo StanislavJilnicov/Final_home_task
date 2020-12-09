@@ -1,0 +1,17 @@
+.header-bg-thin {
+   width: 100%;
+   height: 55px;
+   background-color: map-get($colors, fourth);
+   position: absolute;
+   z-index: -5;
+   top: 32px;
+
+   @include media(1550px) {
+      top: 0;
+   }
+
+   @include media(350px) {
+      display: none;
+   }
+}
+

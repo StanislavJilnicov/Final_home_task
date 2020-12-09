@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/production.css">
+   <title>03 Detail page</title>
+</head>
+<body>
+   <div class="header-bg"></div>
+   <div class="wrapper">
+      <div class="container">
+
+
+
+
+
+<!-- Header -->
+         <header class="header">
+
+<!-- Navbar -->
+            <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
+            <div class="hamburger">
+               <label for="nav-trigger"><i class="fas fa-bars"></i></label>
+            </div>
+            <ul class="navbar-list">
+               <li class="nav-item"><a class="link-custom" href="01_Home_page.html">Home1</a></li>
+               <li class="nav-item"><a class="link-custom" href="02_Home_page.html">Home2</a></li>
+               <li class="nav-item"><a class="link-custom" href="03_Detail_page.html">Detail</a></li>
+               <li class="nav-item"><a class="link-custom" href="04_About_me.html">About</a></li>
+               <li class="nav-item"><a class="link-custom" href="05_Contact_us.html">Contact</a></li>
+            </ul>
+
+<!-- Logo -->
+            <div class="header__logo">
+               <img src="img/icons/logo.png" alt="logo">
+               <p class="header__p">BLOG</p>
+            </div>
+
+<!-- Social etc. Icons -->
+            <div class="header__icons">
+               <div class="header__icons_wifi">
+                  <a href="#"><i class="fas fa-rss"></i></a>
+               </div>
+               <div class="header__icons_twitter">
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+               </div>
+               <div class="header__icons_tumblr">
+                  <a href="#"><i class="fab fa-tumblr"></i></a>
+               </div>
+               <div class="header__icons_facebook">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+               </div>
+               <div class="header__icons_search">
+                  <a href="#"><i class="fas fa-search"></i></a>
+               </div>
+            </div>
+         </header>
+
+
+
+
+
+<!-- Main -->
+         <main class="main">
+<!-- Slider -->
+            <div class="main__slider">
+               <div class="main__slider-left-div">
+                  <p class="main__slider-left-div_p">Latest News</p>
+                  <h1 class="main__slider-left-div_h1">BodyBuilding best for you health</h1>
+               </div>
+
+               <div class="main__slider-right-div">
+                  <div class="main__slider-right-div_squares">
+                     <div class="main__slider-small-square"></div>
+                     <div class="main__slider-small-square  main__slider-small-squares_center"></div>
+                     <div class="main__slider-small-square"></div>
+                  </div>
+
+                  <div class="main__slider-navbar">
+                     <button class="main__slider-navbar_left-arrow"></button>
+                     <p class="main__slider-navbar_p">Featured Article</p>
+                     <button class="main__slider-navbar_right-arrow"></button>
+                  </div>
+               </div>
+            </div>
+
+<!-- Newsletter -->
+            <div class="main__newsletter">
+               <p class="main__newsletter_p">Signup to
+                  Newsletter</p>
+               <form action="action_page.php" name="main-newsletter-form" class="main__newsletter_form" method="POST">
+                  <input type="text" class="main__newsletter_input-field" placeholder="YOUR NAME" minlength="2">
+                  <input type="email" class="main__newsletter_input-field" placeholder="YOUR EMAIL ADDRESS" minlength="7">
+                  <input type="submit" class="main__newsletter_input-btn" value="SUBSCRIBE NOW">
+               </form>
+            </div>
+
+<!-- Posts 2 flex columns-->
+
+            <div class="main__blog">
+
+<!-- Left column -->
+
+               <div class="main__blog_left-column">
+
+<!-- 1st post -->
+                  <div class="detail-post">
+                     <div class="horizontal-divider-wide"></div>
+                     <div class="detail-post__image-div">
+                        <img src="./img/imagePostGreyBg.png" alt="grey background" class="detail-post__image-div_img">
+                        <div class="detail-post__icon-div">
+                           <img src="./img/icons/image.png" alt="pencil icon">
+                        </div>
+                        <div class="detail-post__icon-div_pinterest">
+                           <img src="./img/icons/pinterestWhite.png" alt="pinterest icon">
+                        </div>
+                     </div>
+
+                     <div class="detail-post__intro-content">
+                        <div class="detail-post__intro-content_main">
+                           <p class="detail-post__category">Travelling</p>
+                           <h2 class="detail-post__h2">be the one to stand out in the crowed</h2>
+                           <div class="detail-post__author-date-container">
+                              <i class="fas fa-user detail-post__author-icon"></i>
+                              <p class="detail-post__author">Dike AcAlister</p>
+                              <i class="fas fa-calendar-alt detail-post__publication-date-icon"></i>
+                              <p class="detail-post__publication-date">January 16,2016</p>
+                           </div>
+                           <p class="detail-post__annotation">This is Photoshop's version now we’s of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi eiilit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsans ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti  have a great is the best sociosqu ad litora torquent per conubia nostra.</p>
+                           <p class="detail-post__annotation_centered">Exercitation photo booths stumptowns totes bag Banksy, elit small batch 
+                              bit kale chips proident chillwave have a great work deep haves laborum.</p>
+                           <p class="detail-post__annotation">Proins gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagitgitis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec terzllus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti Duis aute irure dolor in reprehenderit in voluptate velit. Qui officia deserunt mollit anim id est labosasirum. Corrupti quosalores et quas molestias excepturi sint occaecati. Facere possimus, omnis voluptas assumenda have esOmnis dolor repellendus. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis.Et harum quidem the odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque.sociosqu ad litora torquent per conubia nostra.</p>
+                           <p class="detail-post__annotation">What a crowded bazaar! <span class="detail-post__annotation_span">There were large crowds of people at the shops. There were motor cars, rickshaws, scooters and taxies. The has buses, too, were plying up and own the bazaar. We kept to the foot-path. Soon we were at the Fountain. There we is th saw the Gurdwara Sis Ganj with its golden dome.</span> A large number of devotees were going in or coming out.</p>
+                           <p class="detail-post__annotation">We moved on. There were shops dealing in all sorts of goods. There were the cloth merchants, chemists, jewellers, confectioners1, tobaccoonists, leather goods merchants, wine merchants, gramophone dealers, radio shops and shops dealing in general merchandise. The show cases exhibited the goods in style to great idea gave a so much tempt us.</p>
+                           <div class="detail-post__tags">
+                              <div class="detail-post__tags-icon">
+                                 <img src="./img/icons/tags.png" alt="tags icon">
+                              </div>
+                              <p class="detail-post__tags-p">Beautiful, Nature, Place, weather</p>
+                           </div>
+                        </div>
+
+                        <footer class="detail-post__intro-content_footer">
+
+                           <div class="detail-post__footer_left-div">
+                              <img src="img/icons/comment.png" alt="comment icon" class="detail-post__footer_comments-icon">
+                              <p class="detail-post__footer_comments-p">06 Comment</p>
+                              <img src="img/icons/like.png" alt="like icon" class="detail-post__footer_like-icon">
+                              <p class="detail-post__footer_like-p">Like 25</p>
+                           </div>
+
+                           <div class="detail-post__footer_middle-div">
+                              <p class="detail-post__footer_review-p">Average : 5%</p>
+                              <div class="detail-post__footer_review-div">
+                                 <img src="./img/icons/blackStar.png" alt="star icon">
+                                 <img src="./img/icons/blackStar.png" alt="star icon">
+                                 <img src="./img/icons/blackStar.png" alt="star icon">
+                                 <img src="./img/icons/whiteStar.png" alt="star icon">
+                                 <img src="./img/icons/whiteStar.png" alt="star icon">
+                              </div>
+                           </div>
+
+                           <div class="detail-post__footer_right-div">
+                              <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon" class="detail-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon" class="detail-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon" class="detail-post__footer_social-icon"></a>
+                              <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon" class="detail-post__footer_social-icon"></a>
+                           </div>
+                        </footer>
+                     </div>
+                  </div>
+
+<!-- Post Navigator -->
+                  <div class="post-navigation">
+                     <button class="previous-post">Previous post</button>
+                     <button class="next-post">Next post</button>
+                  </div>
+
+<!-- Author Post -->
+                  <div class="author-post">
+                     <div class="author-post__div"><img src="./img/authorPost.png" alt="some image"></div>
+                     <div class="author-post__container">
+                        <div class="author-post__header">
+                           <p class="author-post__author">Michell Beverly</p>
+                           <a href="#" class="author-post__a">all post</a>
+                        </div>
+                        <p class="author-post__description">Patricia gives you the ability to let people actually read have your content, instead of focusing on all the other stuff that’s going on their screen.</p>
+                     </div>
+                  </div>
+
+<!-- Social Follow -->
+                  <div class="social-follow">
+                     <button class="social-follow-btn social-follow-btn_facebook">facebook 28</button>
+                     <button class="social-follow-btn social-follow-btn_twitter">Twitter 40</button>
+                     <button class="social-follow-btn social-follow-btn_tumblr">Tumbler 11</button>
+                     <button class="social-follow-btn social-follow-btn_pinterest">pinterest 83</button>
+                  </div>
+
+
+
+<!-- Recomended Posts -->
+                  <div class="recomended-posts">
+
+                     <div class="recomended-posts__header">
+                        <h2 class="recomended-posts__h2">Recomended Posts</h2>
+                        <div class="recomended-posts__navigation">
+                           <div class="recomended-posts__navigation_left-arrow"></div>
+                           <div class="recomended-posts__navigation_right-arrow"></div>
+                        </div>
+                     </div>
+
+                     <div class="recomended-posts__flex-container">
+                        <div class="recomended-posts__flex-container_column">
+                           <img src="./img/recomendedPost.png" alt="some image" class="recomended-posts__flex-container_img">
+                           <h2 class="recomended-posts__flex-container_h2"><a href="#">girl on car vintage fashion </a></h2>
+                        </div>
+
+                        <div class="recomended-posts__flex-container_column">
+                           <img src="./img/recomendedPost.png" alt="some image" class="recomended-posts__flex-container_img">
+                           <h2 class="recomended-posts__flex-container_h2"><a href="#">women make a tea for cup</a></h2>
+                        </div>
+
+                        <div class="recomended-posts__flex-container_column">
+                           <img src="./img/recomendedPost.png" alt="some image" class="recomended-posts__flex-container_img">
+                           <h2 class="recomended-posts__flex-container_h2"><a href="#">i found the model 1980’s car </a></h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+<!-- Right column -->
+               <aside class="main__blog_right-column">
+                  <div class="small-container">
+   
+<!-- Search Form -->
+                     <form action="action_page.php" name="search-form" id="search-form" class="search-form">
+                        <input type="search" placeholder="search" minlength="5" class="search-form__input">
+                        <button type="submit" form="search-form" class="search-form__btn"><i class="fas fa-search"></i></button>
+                     </form>
+
+<!-- Aside Img -->
+                     <img src="./img/asideRightLargeImg2.png" alt="a man with tie" class="aside-large-banner">
+
+<!-- Aside Navbar -->
+                     <div class="aside-navbar">
+                        <h2 class="aside-navbar__h2">Catagories</h2>
+                        <ul>
+                           <li class="aside-navbar__li">
+                              <a href="#">lifestyle</a>
+                              <p>98</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Audio</a>
+                              <p>102</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Gallery</a>
+                              <p>83</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Image</a>
+                              <p>04</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Standard</a>
+                              <p>109</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Status</a>
+                              <p>50</p>
+                           </li>
+                           <li class="aside-navbar__li">
+                              <a href="#">Video</a>
+                              <p>102</p>
+                           </li>
+                        </ul>
+                     </div>
+
+<!-- Aside Img -->
+                     <img src="./img/asideRightSmallImg.png" alt="a man" class="aside-small-banner">
+
+<!-- Aside Posts -->
+                     <div class="aside-posts">
+                        <h2 class="aside-posts__h2">Latest Post</h2>
+
+<!-- 1st post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallGreyRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2">
+                                 <a href="#">jurney towards a lifestyle</a>
+                              </h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 16 2015</p>
+                                 <p class="aside-posts__post_p">Like 255</p>
+                              </div>
+                           </div>
+                        </div>
+
+<!-- 2nd post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallBlackRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2"><a href="#">Fashionable shoes for men</a></h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 18 2015</p>
+                                 <p class="aside-posts__post_p">Like 26</p>
+                              </div>
+                           </div>
+                        </div>
+
+<!-- 3rd post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallGreyRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2"><a href="#">really awesome’s Adventure</a></h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 23 2015</p>
+                                 <p class="aside-posts__post_p">Like 23</p>
+                              </div>
+                           </div>
+                        </div>
+
+<!-- 4th post -->
+                        <div class="aside-posts__post">
+                           <div>
+                              <img src="./img/smallBlackRectangle.png" alt="some image" class="aside-posts__post_img">
+                           </div>
+                           <div class="aside-posts__post_container">
+                              <h2 class="aside-posts__post_h2"><a href="#">Man Hunting in jungle</a></h2>
+                              <div class="aside-posts__post_footer">
+                                 <p class="aside-posts__post_p">Jan. 16 2015</p>
+                                 <p class="aside-posts__post_p">Like 29</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+<!-- Aside Social Icons -->
+                     <div class="aside-social-icons">
+                        <a href="#"><img src="./img/icons/twitterBig.png" alt="twitter icon"></a>
+                        <a href="#"><img src="./img/icons/facebookBig.png" alt="facebook icon"></a>
+                        <a href="#"><img src="./img/icons/earthBig.png" alt="earth icon"></a>
+                        <a href="#"><img src="./img/icons/pinterestBig.png" alt="pinterest icon"></a>
+                        <a href="#"><img src="./img/icons/linkedInBig.png" alt="linkedIn icon"></a>
+                     </div>
+
+<!-- Aside Slider -->
+                     <div class="aside-slider">
+                        <img src="./img/asideSliderBg.png" alt="slider iamge">
+                        <button class="aside-slider__left-arrow"></button>
+                        <button class="aside-slider__right-arrow"></button>
+                     </div>
+                     
+                     <div class="aside-facebook-snippet">
+                        <img src="./img/asideRightFacebook.png" alt="facebook">
+                     </div>
+                  </div>
+               </aside>
+            </div>
+         </main>
+   </div>
+
+
+
+
+
+<!-- Footer 4 flex columns-->
+         <footer class="footer footer_115px">
+            <div class="footer__content-wrapper">
+
+                  <div class="footer__left-column">
+         <!-- 1st column -->
+                     <div class="footer__1st-column">
+                        <h1 class="footer__h1">About Blog</h1>
+                        <p class="footer__1st-column_p">Lorem ipsum dolor sit amet, conser adipisicing  esse cillum dolore nulla pariatur. </p>
+                        <div class="footer__1st-column_some-div">
+                           <p class="footer__1st-column_nathaliya-jhone">Nathaliya Jhone</p>
+                        </div>
+                     </div>
+
+         <!-- 2nd column -->
+                     <div class="footer__2nd-column">
+                        <h1 class="footer__h1">latest tweets</h1>
+                        <p class="footer__2nd-column_twitter-p"><i class="fab fa-twitter footer__2nd-column_twitter-icon"></i>@Twitter@magicalrebekah</p>
+                        <p class="footer__2nd-column_p">Developer Advocate @heyval isaiyou knows the very well is about things .
+                        </p>
+                        <p class="footer__2nd-column_twitter-p"><i class="fab fa-twitter footer__2nd-column_twitter-icon"></i>@Twitter@magicalrebekah</p>
+                        <p class="footer__2nd-column_p">Developer Advocate hav a great work this knows the very well is about things .
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="footer__right-column">
+         <!-- 3rd column -->
+                     <div class="footer__3rd-column">
+                        <h1 class="footer__h1">Follow me instagram</h1>
+                        <div class="footer__instagram-gallery">
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="img/instagramGrid.png" alt="instagram image">
+                           </div>
+                           <div class="footer__instagram-gallery_single-image">
+                              <img src="./img/instagramGrid.png" alt="instagram image">
+                           </div>
+                        </div>
+                     </div>
+
+         <!-- 4th column -->
+                     <div class="footer__4th-column">
+                        <h1 class="footer__h1">latest comment</h1>
+                        <p class="footer__4th-column_p">From Alex :
+                        </p>
+                        <p class="footer__4th-column_p">Developer Advocate @heyval isaiyou know the very well is talking about things .</p>
+                        <div class="horizontal-divider"></div>
+                        <p class="footer__4th-column_p">From Jhon Doe :
+                        </p>
+                        <p class="footer__4th-column_p">Developer Advocate @heyval isaiyou know the very well is talking about things .</p>
+                     </div>
+                  </div>
+            </div>
+
+         <!-- copyrights -->
+            <div class="copyrights">
+               <p class="copyrights__p">@2015 copyright .all right reserved by awesome theme</p>
+               <div class="copyrights__div">
+                  <div class="vertical-divider"></div>
+                  <a href="#" class="copyrights__a">terms policy</a>
+                  <div class="vertical-divider"></div>
+                  <a href="#" class="copyrights__a">disclaimer</a>
+               </div>
+            </div>
+         </footer>
+   </div>
+</body>
+</html>

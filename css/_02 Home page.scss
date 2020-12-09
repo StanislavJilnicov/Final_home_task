@@ -1,0 +1,1309 @@
+/*------------------------------------*\
+   #Main
+\*------------------------------------*/
+
+
+
+.main {
+
+   &__blog {
+      display: flex;
+      gap: 29px;
+      margin-top: 55px;
+      
+      @include media(1550px) {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+
+      &_about-page {
+         margin-top: 97px;
+      }
+
+      &_left-column {
+         width: 100vw;
+         max-width: 1140px;
+
+         @include media(1155px) {
+            max-width: 95vw;
+            width: 100vw;
+         }
+      }
+
+      &_right-column {
+         max-width: 360px;
+         padding: 42px 30px 37px;
+         box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21);
+         border: solid 1px rgba(221, 221, 221, 0.15);
+         background-color: map-get($colors, white);
+         height: fit-content;
+
+         @include media(1550px) {
+            display: none;
+         }
+      }
+
+      &_right-column-custom {
+         max-width: 360px;
+         padding: 42px 30px 23px;
+         box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21);
+         border: solid 1px rgba(221, 221, 221, 0.15);
+         background-color: map-get($colors, white);
+         height: fit-content;
+
+         @include media(1550px) {
+            display: none;
+         }
+      }
+   }
+}
+
+
+
+
+
+
+/*------------------------------------*\
+   #Left column
+\*------------------------------------*/
+
+.image-post {
+   position: relative;
+   margin-bottom: 59px;
+
+   &__image-div {
+      position: relative;
+      display: flex;
+      gap: 2px;
+
+      &_img {
+         width: 100%; 
+         height: 100%; 
+         object-fit: contain; 
+      }
+   }
+
+   &__icon-div {
+      width: 40px;
+      height: 35px;
+      box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+      background-color: map-get($colors, third);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 45%);
+      
+      @extend %center;
+
+      &_pinterest {
+         width: 51px;
+         height: 44px;
+         background-color: map-get($colors, twelve);
+         position: absolute;
+         top: 3px;
+         right: 1px;
+
+         @extend %center;
+      }
+   }
+
+   &__intro-content {
+      padding: 61px 59px 30px;
+
+      &_main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &_footer {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 79px;
+         padding-right: 43px;
+
+         @include media(620px) {
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         @include media(425px) {
+            display: none;
+         }
+      }
+
+      &_footer-custom {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 70px;
+         padding-right: 43px;
+      }
+   }
+
+   &__category {
+      font-family: Hind;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      @include media(330px) {
+         display: none;
+      }
+   }
+
+   &__h2 {
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 0.86;
+      letter-spacing: 1.68px;
+      color: map-get($colors, third);
+      text-transform: uppercase;
+      transform: scaleX(0.97);
+      margin-bottom: 25px;
+      text-align: center;
+      
+      @include media(970px) {
+         line-height: 1.43;
+      }
+
+      @include media(620px) {
+         font-size: 23px;
+      }
+
+      @include media(350px) {
+         font-size: 20px;
+      }
+   }
+
+   &__author-date-container {
+      display: flex;
+      margin-bottom: 26px;
+      margin-left: 2px;
+
+      @include media(475px) {
+         display: none;
+      }
+   }
+
+   &__author,
+   &__publication-date {
+      font-family: Hind;
+      font-size: 15.5px;
+      line-height: 1.52;
+      letter-spacing: 1.55px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      transform: scaleX(0.92);
+
+      &-icon {
+         margin-right: 5px;
+      }
+   }
+
+   &__publication-date-icon {
+      margin-left: 24px;
+   }
+
+   &__annotation {
+      font-family: Hind;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+      letter-spacing: 1.6px;
+      color: map-get($colors, six);
+      max-width: 982px;
+      margin-left: -35px;
+      margin-bottom: 40px;
+   }
+
+   &__footer {
+
+      &_left-div {
+         display: flex;
+         align-items: center;
+         margin-bottom: -2px;
+
+         @include media(620px) {
+            margin-bottom: 10px;
+            margin-top: -40px;
+         }
+      }
+
+      &_comments-icon {
+         margin-right: 3px;
+      }
+
+      &_comments-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+
+      }
+
+      &_like-icon {
+         margin-left: 30px;
+         margin-right: 9px;
+      }
+
+      &_like-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+      }
+
+      &_social-icon {
+         margin-left: 28px;
+      }
+   }
+}
+
+
+.gallery-post {
+   background-color: map-get($colors, white);
+   position: relative;
+   margin-bottom: 55px;
+
+   &__image-div {
+      position: relative;
+      display: flex;
+      gap: 2px;
+
+      @include media(1155px) {
+         gap: 10px;
+      }
+
+      @include media(1155px) {
+         max-width: 95vw;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+      }
+      
+      &_img {
+         width: 100%;
+         height: 100%;
+         object-fit: contain;
+      }
+
+      &_1st-column {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2px;
+
+         @include media(1155px) {
+            gap: 10px;
+         }
+      }
+
+      &_2nd-column {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2px;
+
+         @include media(1155px) {
+            display: none;
+         }
+      }
+
+      &_3rd-column {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap: 2px;
+
+         @include media(1155px) {
+            gap: 10px;
+         }
+      }
+   }
+
+   &__icon-div {
+      width: 40px;
+      height: 35px;
+      box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+      background-color: map-get($colors, third);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 45%);
+      
+      @extend %center;
+   }
+
+   &__intro-content {
+      padding: 61px 59px 30px;
+
+      &_main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &_footer {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 79px;
+         padding-right: 43px;
+
+         @include media(620px) {
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         @include media(425px) {
+            display: none;
+         }
+      }
+
+      &_footer-custom {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 70px;
+         padding-right: 43px;
+      }
+   }
+
+   &__category {
+      font-family: Hind;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      @include media(330px) {
+         display: none;
+      }
+   }
+
+   &__h2 {
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 0.86;
+      letter-spacing: 1.68px;
+      color: map-get($colors, third);
+      text-transform: uppercase;
+      transform: scaleX(0.97);
+      margin-bottom: 25px;
+      text-align: center;
+
+      @include media(970px) {
+         line-height: 1.43;
+      }
+
+      @include media(620px) {
+         font-size: 23px;
+      }
+
+      @include media(350px) {
+         font-size: 20px;
+      }
+   }
+
+   &__author-date-container {
+      display: flex;
+      margin-bottom: 26px;
+      margin-right: -5px;
+
+      @include media(475px) {
+         display: none;
+      }
+   }
+
+   &__author,
+   &__publication-date {
+      font-family: Hind;
+      font-size: 15.5px;
+      line-height: 1.52;
+      letter-spacing: 1.55px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      transform: scaleX(0.92);
+
+      &-icon {
+         margin-right: 5px;
+      }
+   }
+
+   &__publication-date-icon {
+      margin-left: 26px;
+   }
+
+   &__annotation {
+      font-family: Hind;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+      letter-spacing: 1.6px;
+      color: map-get($colors, six);
+      max-width: 982px;
+      margin-left: -35px;
+      margin-bottom: 43px;
+   }
+
+   &__footer {
+
+      &_left-div {
+         display: flex;
+         align-items: center;
+
+         @include media(620px) {
+            margin-bottom: 10px;
+            margin-top: -40px;
+         }
+      }
+
+      &_comments-icon {
+         margin-right: 3px;
+      }
+
+      &_comments-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+
+      }
+
+      &_like-icon {
+         margin-left: 25px;
+         margin-right: 9px;
+      }
+
+      &_like-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+      }
+
+      &_social-icon {
+         margin-left: 28px;
+      }
+   }
+}
+
+
+.quotes-post {
+   max-width: 1140px;
+   box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21);
+   border: solid 1px rgba(221, 221, 221, 0.15);
+   background-color: map-get($colors, eleven);
+   padding: 87px 50px 71px 65px;
+   margin-bottom: 58px;
+   position: relative;
+
+   @extend %center;
+   flex-direction: column;
+
+   &_custom {
+      max-width: 1140px;
+      box-shadow: 0 0 1px 0 rgba(232, 232, 232, 0.21);
+      border: solid 1px rgba(221, 221, 221, 0.15);
+      background-color: map-get($colors, eleven);
+      padding: 85px 50px 69px 50px;
+      position: relative;
+
+      @extend %center;
+      flex-direction: column;
+   }
+
+   &__icon-div {
+      width: 40px;
+      height: 35px;
+      box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+      background-color: map-get($colors, white);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @extend %center;
+   }
+
+   &__p {
+      font-family: Hind;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.8;
+      letter-spacing: 2px;
+      color: map-get($colors, white);
+      text-transform: uppercase;
+      margin-bottom: 42px;
+
+      @include media(620px) {
+         font-size: 16px;
+      }
+
+      &_custom {
+         font-family: Hind;
+         font-size: 20px;
+         font-weight: 500;
+         line-height: 1.8;
+         letter-spacing: 2px;
+         color: map-get($colors, white);
+         text-transform: uppercase;
+         margin-bottom: 42px;
+         margin-bottom: 5px;
+      }
+   }
+
+   &__author {
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      margin-left: -12px;
+      transform: scaleX(0.95);
+   }
+
+   &__a {
+      font-family: Hind;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 2.4;
+      letter-spacing: 2px;
+      color: map-get($colors, white);
+      text-decoration: underline;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      @extend %transition;
+
+      @include media(620px) {
+         font-size: 16px;
+      }
+
+      @include media(450px) {
+         font-size: 12px;
+      }
+
+      &:hover {
+         color: map-get($colors, cyan);
+      }
+   }
+}
+
+
+.video-post {
+   position: relative;
+   margin-bottom: 55px;
+
+   &__image-div {
+      position: relative;
+      display: flex;
+      gap: 2px;
+
+      &_img {
+         width: 100%; 
+         height: 100%; 
+         object-fit: contain; 
+      }
+   }
+
+   &__icon-div {
+      width: 40px;
+      height: 35px;
+      box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+      background-color: map-get($colors, third);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 40%);
+      
+      @extend %center;
+
+      &_pinterest {
+         width: 51px;
+         height: 44px;
+         background-color: map-get($colors, twelve);
+         position: absolute;
+         top: 3px;
+         right: 1px;
+
+         @extend %center;
+      }
+
+      &_text {
+         width: 40px;
+         height: 35px;
+         box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+         background-color: map-get($colors, third);
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         
+         @extend %center;
+      }
+   }
+
+   &__intro-content {
+      padding: 61px 59px 30px;
+
+      &_main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &_footer {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding-right: 48px;
+
+         @include media(620px) {
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         @include media(425px) {
+            display: none;
+         }
+      }
+   }
+
+   &__category {
+      font-family: Hind;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      @include media(330px) {
+         display: none;
+      }
+   }
+
+   &__h2 {
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.43;
+      letter-spacing: 1.68px;
+      text-align: center;
+      color: map-get($colors, third);
+      text-transform: uppercase;
+      transform: scaleX(0.975);
+      margin-top: -8px;
+      margin-bottom: 14px;
+
+      @include media(620px) {
+         font-size: 23px;
+      }
+
+      @include media(350px) {
+         font-size: 20px;
+      }
+   }
+
+   &__author-date-container {
+      display: flex;
+      margin-bottom: 26px;
+      margin-left: -2px;
+
+      @include media(475px) {
+         display: none;
+      }
+   }
+
+   &__author,
+   &__publication-date {
+      font-family: Hind;
+      font-size: 15.5px;
+      line-height: 1.52;
+      letter-spacing: 1.55px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      transform: scaleX(0.92);
+
+      &-icon {
+         margin-right: 5px;
+      }
+   }
+
+   &__publication-date-icon {
+      margin-left: 23px;
+   }
+
+   &__annotation {
+      font-family: Hind;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+      letter-spacing: 1.6px;
+      color: map-get($colors, six);
+      margin-left: -7px;
+      margin-bottom: 70px;
+   }
+
+   &__footer {
+
+      &_left-div {
+         display: flex;
+         align-items: center;
+         margin-left: -5px;
+         margin-bottom: -2px;
+
+         @include media(620px) {
+            margin-bottom: 10px;
+            margin-top: -40px;
+         }
+      }
+
+      &_comments-icon {
+         margin-right: 3px;
+      }
+
+      &_comments-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+
+      }
+
+      &_like-icon {
+         margin-left: 30px;
+         margin-right: 9px;
+      }
+
+      &_like-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+      }
+
+      &_social-icon {
+         margin-left: 28px;
+      }
+   }
+}
+
+
+.soundcloud-post {
+   max-width: 1139px;
+   height: 270px;
+   margin-bottom: 83px;
+
+   @include media(650px) {
+      display: none;
+   }
+
+   &_img {
+      @include media(1160px) {
+         width: 100%; 
+         height: 100%; 
+         object-fit: contain; 
+      }
+   }
+}
+
+
+.text-post{
+   background-color: map-get($colors, white);
+   margin-bottom: 80px;
+   position: relative;
+
+   &__icon-div {
+      width: 40px;
+      height: 35px;
+      box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+      background-color: map-get($colors, third);
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 40%);
+      
+      @extend %center;
+
+      &_pinterest {
+         width: 51px;
+         height: 44px;
+         background-color: map-get($colors, twelve);
+         position: absolute;
+         top: 3px;
+         right: 1px;
+
+         @extend %center;
+      }
+
+      &_text {
+         width: 40px;
+         height: 35px;
+         box-shadow: 0.5px 0.9px 3px 0 rgba(213, 213, 213, 0.75);
+         background-color: map-get($colors, third);
+         position: absolute;
+         top: 0;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         
+         @extend %center;
+      }
+   }
+
+   &__intro-content {
+      padding: 61px 59px 25px;
+
+      &_main {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &_footer {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 79px;
+         padding-right: 43px;
+
+         @include media(620px) {
+            flex-direction: column;
+            justify-content: center;
+         }
+
+         @include media(425px) {
+            display: none;
+         }
+      }
+
+      &_footer-custom {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-top: 70px;
+         padding-right: 43px;
+      }
+   }
+
+   &__category {
+      font-family: Hind;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 1.6px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      margin-bottom: 20px;
+
+      @include media(330px) {
+         display: none;
+      }
+   }
+
+   &__h2 {
+      font-family: Montserrat;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 0.86;
+      letter-spacing: 1.68px;
+      color: map-get($colors, third);
+      text-transform: uppercase;
+      transform: scaleX(0.97);
+      margin-bottom: 25px;
+      text-align: center;
+
+      @include media(970px) {
+         line-height: 1.43;
+      }
+
+      @include media(620px) {
+         font-size: 23px;
+      }
+
+      @include media(350px) {
+         font-size: 20px;
+      }
+   }
+
+   &__author-date-container {
+      display: flex;
+      margin-bottom: 26px;
+      margin-right: -5px;
+
+      @include media(475px) {
+         display: none;
+      }
+   }
+
+   &__author,
+   &__publication-date {
+      font-family: Hind;
+      font-size: 15.5px;
+      line-height: 1.52;
+      letter-spacing: 1.55px;
+      color: map-get($colors, DustyGray);
+      text-transform: uppercase;
+      transform: scaleX(0.92);
+
+      &-icon {
+         margin-right: 5px;
+      }
+   }
+
+   &__publication-date-icon {
+      margin-left: 22px;
+   }
+
+   &__annotation {
+      font-family: Hind;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.75;
+      letter-spacing: 1.6px;
+      color: map-get($colors, six);
+      margin-bottom: 28px;
+   
+      &:last-of-type {
+         margin-bottom: 39px;
+      }
+   }
+
+   &__footer {
+
+      &_left-div {
+         display: flex;
+         align-items: center;
+
+         @include media(620px) {
+            margin-bottom: 10px;
+            margin-top: -40px;
+         }
+      }
+
+      &_comments-icon {
+         margin-right: 3px;
+      }
+
+      &_comments-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+
+      }
+
+      &_like-icon {
+         margin-left: 30px;
+         margin-right: 9px;
+      }
+
+      &_like-p {
+         font-family: Hind;
+         font-size: 15.5px;
+         letter-spacing: 1.55px;
+         color: map-get($colors, DustyGray);
+         text-transform: uppercase;
+         transform: scaleX(0.92);
+      }
+
+      &_social-icon {
+         margin-left: 28px;
+      }
+   }
+}
+
+
+
+
+
+/*------------------------------------*\
+   #Right column
+\*------------------------------------*/
+
+.small-container {
+   max-width: 300px;
+}
+
+
+.search-form {
+   margin-bottom: 40px;
+   display: flex;
+
+   &_custom {
+      margin-bottom: 20px;
+   }
+
+   &__input {
+      width: 100vw;
+      max-width: 250px;
+      height: 50px;
+      padding: 0 0 0 18px;
+      border: solid 1px #cccccc;
+      background-color: map-get($colors, white);
+
+      &:focus {
+         font-size: 18px;
+         outline-color: map-get($colors, cyan);
+
+      }
+   
+      &::placeholder {
+         font-family: Hind;
+         font-size: 15px;
+         font-weight: 300;
+         line-height: 1.87;
+         letter-spacing: 1.5px;
+         color: map-get($colors, third);
+         text-transform: uppercase;
+         color: map-get($colors, third);
+      }
+   }
+
+   &__btn {
+      min-width: 50px;
+      min-height: 50px;
+      border: none;
+      background-color: map-get($colors, third);
+      color: map-get($colors, white);
+
+
+      @extend %center;
+
+      @extend %transition;
+
+      &:hover {
+         cursor: pointer;
+         color: map-get($colors, cyan);
+      }
+
+      &:active {
+         transform: scale(0.95);
+      }
+   }
+}
+
+
+.aside {
+
+   &-large-banner {
+      margin-bottom: 30px;
+   }
+
+   &-navbar {
+      text-align: center;
+      margin-bottom: 40px;
+   
+      &__h2 {
+         font-family: Montserrat;
+         font-size: 20px;
+         font-weight: bold;
+         line-height: 1.4;
+         letter-spacing: 1.2px;
+         color: map-get($colors, third);
+         border-bottom: 1px solid #eeeeee;
+         text-transform: uppercase;
+         padding-bottom: 12px;
+         margin-bottom: 13px;
+      }
+   
+      &__li {
+         display: flex;
+         justify-content: space-between;
+         font-family: Hind;
+         font-size: 16px;
+         font-weight: 500;
+         line-height: 3.13;
+         letter-spacing: 1.6px;
+         color: map-get($colors, third);
+         text-transform: uppercase;
+         margin-bottom: -1px;
+         border-bottom: 1px solid #eeeeee;
+   
+         &>a {
+            text-decoration: none;
+            @extend %transition;
+         }
+
+         &>a:hover {
+            color: map-get($colors, cyan);
+         }
+      }
+   }
+
+   &-small-banner {
+      margin-bottom: 30px;
+   }
+
+   
+   &-posts {
+      margin-bottom: 42px;
+
+      &_custom {
+         margin-bottom: 0;
+      }
+
+      &__h2 {
+         font-family: Montserrat;
+         font-size: 20px;
+         font-weight: bold;
+         line-height: 1.4;
+         letter-spacing: 1.2px;
+         color: map-get($colors, third);
+         text-transform: uppercase;
+         text-align-last: center;
+         padding-bottom: 14px;
+         border-bottom: 1px solid #eeeeee;
+      }
+
+      &__post {
+         display: flex;
+         align-items: center;
+         padding: 24px 0 12px;
+         border-bottom: 1px solid #eeeeee;
+
+         &_custom {
+            border: none;
+            padding: 24px 0 0;
+         }
+
+         &_img {
+            margin-right: 8px;
+         }
+
+         &_container {
+            display: flex;
+            flex-direction: column;
+         }
+      
+         &_h2 {
+            font-family: Montserrat;
+            font-size: 16px;
+            line-height: 1.38;
+            letter-spacing: 1.6px;
+            color: map-get($colors, third);
+            text-transform: uppercase;
+            font-weight: bold;
+            transform: scaleX(0.97);
+            margin-bottom: 8px;
+            margin-left: -2px;
+            
+            &>a {
+               @extend %transition;
+            }
+
+            &>a:hover {
+               color: map-get($colors, cyan);
+            }
+         }
+      
+         &_p {
+            font-family: Hind;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 1.71;
+            letter-spacing: 0.84px;
+            color: map-get($colors, DustyGray);
+            text-transform: uppercase;
+            
+            &:nth-of-type(1) {
+               margin-right: 24px;
+            }
+         }
+
+         &_footer {
+            display: flex;
+         }
+      }
+   }
+
+   &-social-icons {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 37px;
+   }
+
+   &-slider {
+      position: relative;
+      cursor: auto;
+      margin-bottom: 37px;
+
+      &__left-arrow {
+         position: absolute;
+         top: 50%;
+         left: 0;
+         transform: translateY(-50%);
+         width: 36px;
+         height: 36px;
+         background-color: map-get($colors, six);
+         background-image: url(../img/icons/arrowLeft.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         border: none;
+
+         @extend %transition;
+
+         &:hover {
+            cursor: pointer;
+            transform: translateX(-10px) translateY(-50%);
+         }
+
+         &:active {
+            transform: translateX(-10px) translateY(-50%) scale(0.95);
+         }
+      }
+      
+      &__right-arrow {
+         position: absolute;
+         top: 50%;
+         right: 0;
+         transform: translateY(-50%);
+         width: 36px;
+         height: 36px;
+         background-color: map-get($colors, six);
+         background-image: url(../img/icons/arrowRight.png);
+         background-position: center;
+         background-repeat: no-repeat;
+         border: none;
+
+         @extend %transition;
+
+         &:hover {
+            cursor: pointer;
+            transform: translateX(10px) translateY(-50%);
+         }
+
+         &:active {
+            transform: translateX(10px) translateY(-50%) scale(0.95);
+         }
+      }
+   }
+}
+
